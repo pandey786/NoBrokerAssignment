@@ -1,0 +1,6 @@
+framework module Pods_NoBrokerAssignementTests {
+  umbrella header "Pods-NoBrokerAssignementTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

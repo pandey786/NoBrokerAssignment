@@ -1,0 +1,1284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC347C4BDF0922B365FB8FA /* Pods_NoBrokerAssignement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C327F57975214F80C86B99 /* Pods_NoBrokerAssignement.framework */; };
+		35513136203A7871006D4EA0 /* NoBrokerAssignementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513135203A7871006D4EA0 /* NoBrokerAssignementTests.swift */; };
+		35513141203A7871006D4EA0 /* NoBrokerAssignementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513140203A7871006D4EA0 /* NoBrokerAssignementUITests.swift */; };
+		355131D6203A7953006D4EA0 /* RootContracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551316B203A7953006D4EA0 /* RootContracter.swift */; };
+		355131D7203A7953006D4EA0 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551316D203A7953006D4EA0 /* RootRouter.swift */; };
+		355131D8203A7953006D4EA0 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551316F203A7953006D4EA0 /* ViewProtocols.swift */; };
+		355131D9203A7953006D4EA0 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513171203A7953006D4EA0 /* Endpoints.swift */; };
+		355131DA203A7953006D4EA0 /* PropertySearchAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513172203A7953006D4EA0 /* PropertySearchAPIService.swift */; };
+		355131DB203A7953006D4EA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513174203A7953006D4EA0 /* AppDelegate.swift */; };
+		355131DC203A7953006D4EA0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513176203A7953006D4EA0 /* Enums.swift */; };
+		355131DD203A7953006D4EA0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513178203A7953006D4EA0 /* Extensions.swift */; };
+		355131DE203A7953006D4EA0 /* IndicatableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513179203A7953006D4EA0 /* IndicatableViewExtension.swift */; };
+		355131DF203A7953006D4EA0 /* PropertySearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551317B203A7953006D4EA0 /* PropertySearchResultModel.swift */; };
+		355131E0203A7953006D4EA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3551317D203A7953006D4EA0 /* Assets.xcassets */; };
+		355131E1203A7953006D4EA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3551317E203A7953006D4EA0 /* LaunchScreen.storyboard */; };
+		355131E2203A7953006D4EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35513180203A7953006D4EA0 /* Main.storyboard */; };
+		355131E9203A7953006D4EA0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551318C203A7953006D4EA0 /* ShadowView.swift */; };
+		355131EB203A7953006D4EA0 /* CALayer+KafkaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35513193203A7953006D4EA0 /* CALayer+KafkaLayout.m */; };
+		355131EC203A7953006D4EA0 /* NSObject+KafkaAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35513195203A7953006D4EA0 /* NSObject+KafkaAnimation.m */; };
+		355131ED203A7953006D4EA0 /* UIScrollView+KafkaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35513197203A7953006D4EA0 /* UIScrollView+KafkaLayout.m */; };
+		355131EE203A7953006D4EA0 /* UIView+KafkaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35513199203A7953006D4EA0 /* UIView+KafkaLayout.m */; };
+		355131EF203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3551319C203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.m */; };
+		355131F0203A7953006D4EA0 /* KafkaFootRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3551319F203A7953006D4EA0 /* KafkaFootRefreshControl.m */; };
+		355131F1203A7953006D4EA0 /* KafkaHeadRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131A1203A7953006D4EA0 /* KafkaHeadRefreshControl.m */; };
+		355131F2203A7953006D4EA0 /* KafkaRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131A3203A7953006D4EA0 /* KafkaRefreshControl.m */; };
+		355131F3203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131A6203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.m */; };
+		355131F4203A7953006D4EA0 /* KafkaRefreshDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131A9203A7953006D4EA0 /* KafkaRefreshDefaults.m */; };
+		355131F5203A7953006D4EA0 /* Image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 355131AC203A7953006D4EA0 /* Image.bundle */; };
+		355131F6203A7953006D4EA0 /* KafkaArrowFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131B2203A7953006D4EA0 /* KafkaArrowFooter.m */; };
+		355131F7203A7953006D4EA0 /* KafkaNativeFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131B4203A7953006D4EA0 /* KafkaNativeFooter.m */; };
+		355131F8203A7953006D4EA0 /* KafkaReplicatorFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131B6203A7953006D4EA0 /* KafkaReplicatorFooter.m */; };
+		355131F9203A7953006D4EA0 /* KafkaRingIndicatorFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131B8203A7953006D4EA0 /* KafkaRingIndicatorFooter.m */; };
+		355131FA203A7953006D4EA0 /* KafkaArrowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131BB203A7953006D4EA0 /* KafkaArrowHeader.m */; };
+		355131FB203A7953006D4EA0 /* KafkaNativeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131BD203A7953006D4EA0 /* KafkaNativeHeader.m */; };
+		355131FC203A7953006D4EA0 /* KafkaReplicatorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131BF203A7953006D4EA0 /* KafkaReplicatorHeader.m */; };
+		355131FD203A7953006D4EA0 /* KafkaRingIndicatorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131C1203A7953006D4EA0 /* KafkaRingIndicatorHeader.m */; };
+		355131FE203A7953006D4EA0 /* KafkaArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131C5203A7953006D4EA0 /* KafkaArcLayer.m */; };
+		355131FF203A7953006D4EA0 /* KafkaReplicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 355131C7203A7953006D4EA0 /* KafkaReplicatorLayer.m */; };
+		35513200203A7953006D4EA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355131C9203A7953006D4EA0 /* Constants.swift */; };
+		35513201203A7953006D4EA0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355131CA203A7953006D4EA0 /* Utils.swift */; };
+		35513210203A7B41006D4EA0 /* PropertySearchContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513204203A7B41006D4EA0 /* PropertySearchContractor.swift */; };
+		35513211203A7B41006D4EA0 /* PropertySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513206203A7B41006D4EA0 /* PropertySearchInteractor.swift */; };
+		35513212203A7B41006D4EA0 /* PropertySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513208203A7B41006D4EA0 /* PropertySearchPresenter.swift */; };
+		35513213203A7B41006D4EA0 /* PropertySearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551320A203A7B41006D4EA0 /* PropertySearchRouter.swift */; };
+		35513214203A7B41006D4EA0 /* PropertySearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551320C203A7B41006D4EA0 /* PropertySearchCollectionViewCell.swift */; };
+		35513215203A7B41006D4EA0 /* PropertySearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3551320D203A7B41006D4EA0 /* PropertySearchCollectionViewCell.xib */; };
+		35513216203A7B41006D4EA0 /* PropertySearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3551320E203A7B41006D4EA0 /* PropertySearchStoryboard.storyboard */; };
+		35513217203A7B41006D4EA0 /* PropertySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551320F203A7B41006D4EA0 /* PropertySearchViewController.swift */; };
+		3551321F203ACBBC006D4EA0 /* PropertyFilterStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3551321E203ACBBC006D4EA0 /* PropertyFilterStoryboard.storyboard */; };
+		35513221203ACBCC006D4EA0 /* PropertyFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513220203ACBCC006D4EA0 /* PropertyFilterViewController.swift */; };
+		35513223203AD137006D4EA0 /* PropertyFilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35513222203AD137006D4EA0 /* PropertyFilterRouter.swift */; };
+		3CD275EC19A05AD6B87ACF86 /* Pods_NoBrokerAssignementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2B2545F0AEB985DDED27F6 /* Pods_NoBrokerAssignementTests.framework */; };
+		64E6F03414A99DB419BC8EAF /* Pods_NoBrokerAssignementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22CB5104BF6FAFD9F963B33 /* Pods_NoBrokerAssignementUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35513132203A7871006D4EA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35513115203A7870006D4EA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3551311C203A7871006D4EA0;
+			remoteInfo = NoBrokerAssignement;
+		};
+		3551313D203A7871006D4EA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35513115203A7870006D4EA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3551311C203A7871006D4EA0;
+			remoteInfo = NoBrokerAssignement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1610098ED118388AF05C8860 /* Pods-NoBrokerAssignementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignementUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignementUITests/Pods-NoBrokerAssignementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2922E6320836826732F77B47 /* Pods-NoBrokerAssignement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignement.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignement/Pods-NoBrokerAssignement.release.xcconfig"; sourceTree = "<group>"; };
+		2F2B2545F0AEB985DDED27F6 /* Pods_NoBrokerAssignementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoBrokerAssignementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551311D203A7871006D4EA0 /* NoBrokerAssignement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoBrokerAssignement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551312C203A7871006D4EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35513131203A7871006D4EA0 /* NoBrokerAssignementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoBrokerAssignementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35513135203A7871006D4EA0 /* NoBrokerAssignementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBrokerAssignementTests.swift; sourceTree = "<group>"; };
+		35513137203A7871006D4EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3551313C203A7871006D4EA0 /* NoBrokerAssignementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoBrokerAssignementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35513140203A7871006D4EA0 /* NoBrokerAssignementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBrokerAssignementUITests.swift; sourceTree = "<group>"; };
+		35513142203A7871006D4EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3551314E203A7881006D4EA0 /* NoBrokerAssignement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoBrokerAssignement-Bridging-Header.h"; sourceTree = "<group>"; };
+		3551316B203A7953006D4EA0 /* RootContracter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContracter.swift; sourceTree = "<group>"; };
+		3551316D203A7953006D4EA0 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		3551316F203A7953006D4EA0 /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		35513171203A7953006D4EA0 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		35513172203A7953006D4EA0 /* PropertySearchAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchAPIService.swift; sourceTree = "<group>"; };
+		35513174203A7953006D4EA0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35513176203A7953006D4EA0 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		35513178203A7953006D4EA0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		35513179203A7953006D4EA0 /* IndicatableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatableViewExtension.swift; sourceTree = "<group>"; };
+		3551317B203A7953006D4EA0 /* PropertySearchResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchResultModel.swift; sourceTree = "<group>"; };
+		3551317D203A7953006D4EA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3551317F203A7953006D4EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35513181203A7953006D4EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3551318C203A7953006D4EA0 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		35513192203A7953006D4EA0 /* CALayer+KafkaLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+KafkaLayout.h"; sourceTree = "<group>"; };
+		35513193203A7953006D4EA0 /* CALayer+KafkaLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+KafkaLayout.m"; sourceTree = "<group>"; };
+		35513194203A7953006D4EA0 /* NSObject+KafkaAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KafkaAnimation.h"; sourceTree = "<group>"; };
+		35513195203A7953006D4EA0 /* NSObject+KafkaAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KafkaAnimation.m"; sourceTree = "<group>"; };
+		35513196203A7953006D4EA0 /* UIScrollView+KafkaLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KafkaLayout.h"; sourceTree = "<group>"; };
+		35513197203A7953006D4EA0 /* UIScrollView+KafkaLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KafkaLayout.m"; sourceTree = "<group>"; };
+		35513198203A7953006D4EA0 /* UIView+KafkaLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KafkaLayout.h"; sourceTree = "<group>"; };
+		35513199203A7953006D4EA0 /* UIView+KafkaLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KafkaLayout.m"; sourceTree = "<group>"; };
+		3551319B203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KafkaConfiguration.h"; sourceTree = "<group>"; };
+		3551319C203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KafkaConfiguration.m"; sourceTree = "<group>"; };
+		3551319E203A7953006D4EA0 /* KafkaFootRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaFootRefreshControl.h; sourceTree = "<group>"; };
+		3551319F203A7953006D4EA0 /* KafkaFootRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaFootRefreshControl.m; sourceTree = "<group>"; };
+		355131A0203A7953006D4EA0 /* KafkaHeadRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaHeadRefreshControl.h; sourceTree = "<group>"; };
+		355131A1203A7953006D4EA0 /* KafkaHeadRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaHeadRefreshControl.m; sourceTree = "<group>"; };
+		355131A2203A7953006D4EA0 /* KafkaRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRefreshControl.h; sourceTree = "<group>"; };
+		355131A3203A7953006D4EA0 /* KafkaRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaRefreshControl.m; sourceTree = "<group>"; };
+		355131A4203A7953006D4EA0 /* KafkaRefreshProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRefreshProtocol.h; sourceTree = "<group>"; };
+		355131A5203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KafkaRefreshControl.h"; sourceTree = "<group>"; };
+		355131A6203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KafkaRefreshControl.m"; sourceTree = "<group>"; };
+		355131A8203A7953006D4EA0 /* KafkaRefreshDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRefreshDefaults.h; sourceTree = "<group>"; };
+		355131A9203A7953006D4EA0 /* KafkaRefreshDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaRefreshDefaults.m; sourceTree = "<group>"; };
+		355131AA203A7953006D4EA0 /* KafkaRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRefresh.h; sourceTree = "<group>"; };
+		355131AC203A7953006D4EA0 /* Image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Image.bundle; sourceTree = "<group>"; };
+		355131AE203A7953006D4EA0 /* KafkaRefreshStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRefreshStyle.h; sourceTree = "<group>"; };
+		355131B1203A7953006D4EA0 /* KafkaArrowFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaArrowFooter.h; sourceTree = "<group>"; };
+		355131B2203A7953006D4EA0 /* KafkaArrowFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaArrowFooter.m; sourceTree = "<group>"; };
+		355131B3203A7953006D4EA0 /* KafkaNativeFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaNativeFooter.h; sourceTree = "<group>"; };
+		355131B4203A7953006D4EA0 /* KafkaNativeFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaNativeFooter.m; sourceTree = "<group>"; };
+		355131B5203A7953006D4EA0 /* KafkaReplicatorFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaReplicatorFooter.h; sourceTree = "<group>"; };
+		355131B6203A7953006D4EA0 /* KafkaReplicatorFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaReplicatorFooter.m; sourceTree = "<group>"; };
+		355131B7203A7953006D4EA0 /* KafkaRingIndicatorFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRingIndicatorFooter.h; sourceTree = "<group>"; };
+		355131B8203A7953006D4EA0 /* KafkaRingIndicatorFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaRingIndicatorFooter.m; sourceTree = "<group>"; };
+		355131BA203A7953006D4EA0 /* KafkaArrowHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaArrowHeader.h; sourceTree = "<group>"; };
+		355131BB203A7953006D4EA0 /* KafkaArrowHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaArrowHeader.m; sourceTree = "<group>"; };
+		355131BC203A7953006D4EA0 /* KafkaNativeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaNativeHeader.h; sourceTree = "<group>"; };
+		355131BD203A7953006D4EA0 /* KafkaNativeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaNativeHeader.m; sourceTree = "<group>"; };
+		355131BE203A7953006D4EA0 /* KafkaReplicatorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaReplicatorHeader.h; sourceTree = "<group>"; };
+		355131BF203A7953006D4EA0 /* KafkaReplicatorHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaReplicatorHeader.m; sourceTree = "<group>"; };
+		355131C0203A7953006D4EA0 /* KafkaRingIndicatorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaRingIndicatorHeader.h; sourceTree = "<group>"; };
+		355131C1203A7953006D4EA0 /* KafkaRingIndicatorHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaRingIndicatorHeader.m; sourceTree = "<group>"; };
+		355131C3203A7953006D4EA0 /* KafkaAnimatableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaAnimatableProtocol.h; sourceTree = "<group>"; };
+		355131C4203A7953006D4EA0 /* KafkaArcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaArcLayer.h; sourceTree = "<group>"; };
+		355131C5203A7953006D4EA0 /* KafkaArcLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaArcLayer.m; sourceTree = "<group>"; };
+		355131C6203A7953006D4EA0 /* KafkaReplicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaReplicatorLayer.h; sourceTree = "<group>"; };
+		355131C7203A7953006D4EA0 /* KafkaReplicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaReplicatorLayer.m; sourceTree = "<group>"; };
+		355131C9203A7953006D4EA0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		355131CA203A7953006D4EA0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		35513204203A7B41006D4EA0 /* PropertySearchContractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchContractor.swift; sourceTree = "<group>"; };
+		35513206203A7B41006D4EA0 /* PropertySearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchInteractor.swift; sourceTree = "<group>"; };
+		35513208203A7B41006D4EA0 /* PropertySearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchPresenter.swift; sourceTree = "<group>"; };
+		3551320A203A7B41006D4EA0 /* PropertySearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchRouter.swift; sourceTree = "<group>"; };
+		3551320C203A7B41006D4EA0 /* PropertySearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		3551320D203A7B41006D4EA0 /* PropertySearchCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertySearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		3551320E203A7B41006D4EA0 /* PropertySearchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PropertySearchStoryboard.storyboard; sourceTree = "<group>"; };
+		3551320F203A7B41006D4EA0 /* PropertySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertySearchViewController.swift; sourceTree = "<group>"; };
+		3551321E203ACBBC006D4EA0 /* PropertyFilterStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PropertyFilterStoryboard.storyboard; sourceTree = "<group>"; };
+		35513220203ACBCC006D4EA0 /* PropertyFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFilterViewController.swift; sourceTree = "<group>"; };
+		35513222203AD137006D4EA0 /* PropertyFilterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFilterRouter.swift; sourceTree = "<group>"; };
+		5A51BBDD62607F74774C4701 /* Pods-NoBrokerAssignementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignementTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignementTests/Pods-NoBrokerAssignementTests.release.xcconfig"; sourceTree = "<group>"; };
+		695FBAE2D62757E441304532 /* Pods-NoBrokerAssignementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignementTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignementTests/Pods-NoBrokerAssignementTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89FE9E4121222EDA46D4D7FB /* Pods-NoBrokerAssignement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignement/Pods-NoBrokerAssignement.debug.xcconfig"; sourceTree = "<group>"; };
+		BC68C11A74A26AA98298A951 /* Pods-NoBrokerAssignementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoBrokerAssignementUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoBrokerAssignementUITests/Pods-NoBrokerAssignementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C22CB5104BF6FAFD9F963B33 /* Pods_NoBrokerAssignementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoBrokerAssignementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C327F57975214F80C86B99 /* Pods_NoBrokerAssignement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoBrokerAssignement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3551311A203A7871006D4EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC347C4BDF0922B365FB8FA /* Pods_NoBrokerAssignement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3551312E203A7871006D4EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD275EC19A05AD6B87ACF86 /* Pods_NoBrokerAssignementTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35513139203A7871006D4EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E6F03414A99DB419BC8EAF /* Pods_NoBrokerAssignementUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E16190D435F2AD1EC9E06A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9E4121222EDA46D4D7FB /* Pods-NoBrokerAssignement.debug.xcconfig */,
+				2922E6320836826732F77B47 /* Pods-NoBrokerAssignement.release.xcconfig */,
+				695FBAE2D62757E441304532 /* Pods-NoBrokerAssignementTests.debug.xcconfig */,
+				5A51BBDD62607F74774C4701 /* Pods-NoBrokerAssignementTests.release.xcconfig */,
+				1610098ED118388AF05C8860 /* Pods-NoBrokerAssignementUITests.debug.xcconfig */,
+				BC68C11A74A26AA98298A951 /* Pods-NoBrokerAssignementUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35513114203A7870006D4EA0 = {
+			isa = PBXGroup;
+			children = (
+				3551311F203A7871006D4EA0 /* NoBrokerAssignement */,
+				35513134203A7871006D4EA0 /* NoBrokerAssignementTests */,
+				3551313F203A7871006D4EA0 /* NoBrokerAssignementUITests */,
+				3551311E203A7871006D4EA0 /* Products */,
+				3551314E203A7881006D4EA0 /* NoBrokerAssignement-Bridging-Header.h */,
+				02E16190D435F2AD1EC9E06A /* Pods */,
+				D00975EAFE1FAD69A880D6AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3551311E203A7871006D4EA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3551311D203A7871006D4EA0 /* NoBrokerAssignement.app */,
+				35513131203A7871006D4EA0 /* NoBrokerAssignementTests.xctest */,
+				3551313C203A7871006D4EA0 /* NoBrokerAssignementUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3551311F203A7871006D4EA0 /* NoBrokerAssignement */ = {
+			isa = PBXGroup;
+			children = (
+				35513173203A7953006D4EA0 /* Application */,
+				35513175203A7953006D4EA0 /* Enums */,
+				35513177203A7953006D4EA0 /* Extensions */,
+				3551317A203A7953006D4EA0 /* Models */,
+				35513152203A7953006D4EA0 /* Modules */,
+				35513170203A7953006D4EA0 /* Network */,
+				3551316E203A7953006D4EA0 /* Protocols */,
+				3551317C203A7953006D4EA0 /* Resources */,
+				355131C8203A7953006D4EA0 /* Utilities */,
+				3551312C203A7871006D4EA0 /* Info.plist */,
+			);
+			path = NoBrokerAssignement;
+			sourceTree = "<group>";
+		};
+		35513134203A7871006D4EA0 /* NoBrokerAssignementTests */ = {
+			isa = PBXGroup;
+			children = (
+				35513135203A7871006D4EA0 /* NoBrokerAssignementTests.swift */,
+				35513137203A7871006D4EA0 /* Info.plist */,
+			);
+			path = NoBrokerAssignementTests;
+			sourceTree = "<group>";
+		};
+		3551313F203A7871006D4EA0 /* NoBrokerAssignementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35513140203A7871006D4EA0 /* NoBrokerAssignementUITests.swift */,
+				35513142203A7871006D4EA0 /* Info.plist */,
+			);
+			path = NoBrokerAssignementUITests;
+			sourceTree = "<group>";
+		};
+		35513152203A7953006D4EA0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3551321B203ACBA7006D4EA0 /* Property Filter */,
+				35513202203A7B41006D4EA0 /* Property Search */,
+				35513169203A7953006D4EA0 /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		35513169203A7953006D4EA0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3551316A203A7953006D4EA0 /* Contractor */,
+				3551316C203A7953006D4EA0 /* Router */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		3551316A203A7953006D4EA0 /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				3551316B203A7953006D4EA0 /* RootContracter.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		3551316C203A7953006D4EA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3551316D203A7953006D4EA0 /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3551316E203A7953006D4EA0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3551316F203A7953006D4EA0 /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		35513170203A7953006D4EA0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				35513171203A7953006D4EA0 /* Endpoints.swift */,
+				35513172203A7953006D4EA0 /* PropertySearchAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		35513173203A7953006D4EA0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				35513174203A7953006D4EA0 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		35513175203A7953006D4EA0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				35513176203A7953006D4EA0 /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		35513177203A7953006D4EA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35513178203A7953006D4EA0 /* Extensions.swift */,
+				35513179203A7953006D4EA0 /* IndicatableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3551317A203A7953006D4EA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3551317B203A7953006D4EA0 /* PropertySearchResultModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3551317C203A7953006D4EA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3551317D203A7953006D4EA0 /* Assets.xcassets */,
+				3551317E203A7953006D4EA0 /* LaunchScreen.storyboard */,
+				35513180203A7953006D4EA0 /* Main.storyboard */,
+				35513182203A7953006D4EA0 /* Custom Controls */,
+				3551318F203A7953006D4EA0 /* Third Party Controls */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35513182203A7953006D4EA0 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3551318B203A7953006D4EA0 /* Shadow View */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		3551318B203A7953006D4EA0 /* Shadow View */ = {
+			isa = PBXGroup;
+			children = (
+				3551318C203A7953006D4EA0 /* ShadowView.swift */,
+			);
+			path = "Shadow View";
+			sourceTree = "<group>";
+		};
+		3551318F203A7953006D4EA0 /* Third Party Controls */ = {
+			isa = PBXGroup;
+			children = (
+				35513190203A7953006D4EA0 /* KafkaRefresh */,
+			);
+			path = "Third Party Controls";
+			sourceTree = "<group>";
+		};
+		35513190203A7953006D4EA0 /* KafkaRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				35513191203A7953006D4EA0 /* Category */,
+				3551319A203A7953006D4EA0 /* Configuration */,
+				3551319D203A7953006D4EA0 /* Core */,
+				355131A7203A7953006D4EA0 /* Default */,
+				355131AA203A7953006D4EA0 /* KafkaRefresh.h */,
+				355131AB203A7953006D4EA0 /* Resource */,
+				355131AD203A7953006D4EA0 /* Style */,
+				355131AF203A7953006D4EA0 /* UIKit */,
+			);
+			path = KafkaRefresh;
+			sourceTree = "<group>";
+		};
+		35513191203A7953006D4EA0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				35513192203A7953006D4EA0 /* CALayer+KafkaLayout.h */,
+				35513193203A7953006D4EA0 /* CALayer+KafkaLayout.m */,
+				35513194203A7953006D4EA0 /* NSObject+KafkaAnimation.h */,
+				35513195203A7953006D4EA0 /* NSObject+KafkaAnimation.m */,
+				35513196203A7953006D4EA0 /* UIScrollView+KafkaLayout.h */,
+				35513197203A7953006D4EA0 /* UIScrollView+KafkaLayout.m */,
+				35513198203A7953006D4EA0 /* UIView+KafkaLayout.h */,
+				35513199203A7953006D4EA0 /* UIView+KafkaLayout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3551319A203A7953006D4EA0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3551319B203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.h */,
+				3551319C203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3551319D203A7953006D4EA0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3551319E203A7953006D4EA0 /* KafkaFootRefreshControl.h */,
+				3551319F203A7953006D4EA0 /* KafkaFootRefreshControl.m */,
+				355131A0203A7953006D4EA0 /* KafkaHeadRefreshControl.h */,
+				355131A1203A7953006D4EA0 /* KafkaHeadRefreshControl.m */,
+				355131A2203A7953006D4EA0 /* KafkaRefreshControl.h */,
+				355131A3203A7953006D4EA0 /* KafkaRefreshControl.m */,
+				355131A4203A7953006D4EA0 /* KafkaRefreshProtocol.h */,
+				355131A5203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.h */,
+				355131A6203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		355131A7203A7953006D4EA0 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				355131A8203A7953006D4EA0 /* KafkaRefreshDefaults.h */,
+				355131A9203A7953006D4EA0 /* KafkaRefreshDefaults.m */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		355131AB203A7953006D4EA0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				355131AC203A7953006D4EA0 /* Image.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		355131AD203A7953006D4EA0 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				355131AE203A7953006D4EA0 /* KafkaRefreshStyle.h */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		355131AF203A7953006D4EA0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				355131B0203A7953006D4EA0 /* FootKit */,
+				355131B9203A7953006D4EA0 /* HeadKit */,
+				355131C2203A7953006D4EA0 /* LayerKit */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		355131B0203A7953006D4EA0 /* FootKit */ = {
+			isa = PBXGroup;
+			children = (
+				355131B1203A7953006D4EA0 /* KafkaArrowFooter.h */,
+				355131B2203A7953006D4EA0 /* KafkaArrowFooter.m */,
+				355131B3203A7953006D4EA0 /* KafkaNativeFooter.h */,
+				355131B4203A7953006D4EA0 /* KafkaNativeFooter.m */,
+				355131B5203A7953006D4EA0 /* KafkaReplicatorFooter.h */,
+				355131B6203A7953006D4EA0 /* KafkaReplicatorFooter.m */,
+				355131B7203A7953006D4EA0 /* KafkaRingIndicatorFooter.h */,
+				355131B8203A7953006D4EA0 /* KafkaRingIndicatorFooter.m */,
+			);
+			path = FootKit;
+			sourceTree = "<group>";
+		};
+		355131B9203A7953006D4EA0 /* HeadKit */ = {
+			isa = PBXGroup;
+			children = (
+				355131BA203A7953006D4EA0 /* KafkaArrowHeader.h */,
+				355131BB203A7953006D4EA0 /* KafkaArrowHeader.m */,
+				355131BC203A7953006D4EA0 /* KafkaNativeHeader.h */,
+				355131BD203A7953006D4EA0 /* KafkaNativeHeader.m */,
+				355131BE203A7953006D4EA0 /* KafkaReplicatorHeader.h */,
+				355131BF203A7953006D4EA0 /* KafkaReplicatorHeader.m */,
+				355131C0203A7953006D4EA0 /* KafkaRingIndicatorHeader.h */,
+				355131C1203A7953006D4EA0 /* KafkaRingIndicatorHeader.m */,
+			);
+			path = HeadKit;
+			sourceTree = "<group>";
+		};
+		355131C2203A7953006D4EA0 /* LayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				355131C3203A7953006D4EA0 /* KafkaAnimatableProtocol.h */,
+				355131C4203A7953006D4EA0 /* KafkaArcLayer.h */,
+				355131C5203A7953006D4EA0 /* KafkaArcLayer.m */,
+				355131C6203A7953006D4EA0 /* KafkaReplicatorLayer.h */,
+				355131C7203A7953006D4EA0 /* KafkaReplicatorLayer.m */,
+			);
+			path = LayerKit;
+			sourceTree = "<group>";
+		};
+		355131C8203A7953006D4EA0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				355131C9203A7953006D4EA0 /* Constants.swift */,
+				355131CA203A7953006D4EA0 /* Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		35513202203A7B41006D4EA0 /* Property Search */ = {
+			isa = PBXGroup;
+			children = (
+				35513203203A7B41006D4EA0 /* Contractor */,
+				35513205203A7B41006D4EA0 /* Interactor */,
+				35513207203A7B41006D4EA0 /* Presenter */,
+				35513209203A7B41006D4EA0 /* Router */,
+				3551320B203A7B41006D4EA0 /* View */,
+			);
+			path = "Property Search";
+			sourceTree = "<group>";
+		};
+		35513203203A7B41006D4EA0 /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				35513204203A7B41006D4EA0 /* PropertySearchContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		35513205203A7B41006D4EA0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				35513206203A7B41006D4EA0 /* PropertySearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		35513207203A7B41006D4EA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				35513208203A7B41006D4EA0 /* PropertySearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		35513209203A7B41006D4EA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3551320A203A7B41006D4EA0 /* PropertySearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3551320B203A7B41006D4EA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3551320C203A7B41006D4EA0 /* PropertySearchCollectionViewCell.swift */,
+				3551320D203A7B41006D4EA0 /* PropertySearchCollectionViewCell.xib */,
+				3551320E203A7B41006D4EA0 /* PropertySearchStoryboard.storyboard */,
+				3551320F203A7B41006D4EA0 /* PropertySearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3551321B203ACBA7006D4EA0 /* Property Filter */ = {
+			isa = PBXGroup;
+			children = (
+				3551321C203ACBA7006D4EA0 /* Router */,
+				3551321D203ACBA7006D4EA0 /* View */,
+			);
+			path = "Property Filter";
+			sourceTree = "<group>";
+		};
+		3551321C203ACBA7006D4EA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				35513222203AD137006D4EA0 /* PropertyFilterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3551321D203ACBA7006D4EA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35513220203ACBCC006D4EA0 /* PropertyFilterViewController.swift */,
+				3551321E203ACBBC006D4EA0 /* PropertyFilterStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D00975EAFE1FAD69A880D6AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5C327F57975214F80C86B99 /* Pods_NoBrokerAssignement.framework */,
+				2F2B2545F0AEB985DDED27F6 /* Pods_NoBrokerAssignementTests.framework */,
+				C22CB5104BF6FAFD9F963B33 /* Pods_NoBrokerAssignementUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3551311C203A7871006D4EA0 /* NoBrokerAssignement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35513145203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignement" */;
+			buildPhases = (
+				830A11D08784ADC7B1AB06E1 /* [CP] Check Pods Manifest.lock */,
+				35513119203A7871006D4EA0 /* Sources */,
+				3551311A203A7871006D4EA0 /* Frameworks */,
+				3551311B203A7871006D4EA0 /* Resources */,
+				526E8E0053D07C6C090B1B9F /* [CP] Embed Pods Frameworks */,
+				0A43272FC41BB3F325F44AF9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoBrokerAssignement;
+			productName = NoBrokerAssignement;
+			productReference = 3551311D203A7871006D4EA0 /* NoBrokerAssignement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35513130203A7871006D4EA0 /* NoBrokerAssignementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35513148203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignementTests" */;
+			buildPhases = (
+				14A5A0D263E2EEBC483877AA /* [CP] Check Pods Manifest.lock */,
+				3551312D203A7871006D4EA0 /* Sources */,
+				3551312E203A7871006D4EA0 /* Frameworks */,
+				3551312F203A7871006D4EA0 /* Resources */,
+				26087F12CF370DA9F7B32A35 /* [CP] Embed Pods Frameworks */,
+				1710230D89486A398C5A0BE9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35513133203A7871006D4EA0 /* PBXTargetDependency */,
+			);
+			name = NoBrokerAssignementTests;
+			productName = NoBrokerAssignementTests;
+			productReference = 35513131203A7871006D4EA0 /* NoBrokerAssignementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3551313B203A7871006D4EA0 /* NoBrokerAssignementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3551314B203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignementUITests" */;
+			buildPhases = (
+				042499809C5558A3FB436948 /* [CP] Check Pods Manifest.lock */,
+				35513138203A7871006D4EA0 /* Sources */,
+				35513139203A7871006D4EA0 /* Frameworks */,
+				3551313A203A7871006D4EA0 /* Resources */,
+				D16B3A97926BF9688EEA25B8 /* [CP] Embed Pods Frameworks */,
+				8D27CB86454E757CDDFE8AF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3551313E203A7871006D4EA0 /* PBXTargetDependency */,
+			);
+			name = NoBrokerAssignementUITests;
+			productName = NoBrokerAssignementUITests;
+			productReference = 3551313C203A7871006D4EA0 /* NoBrokerAssignementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35513115203A7870006D4EA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Durgesh Pandey";
+				TargetAttributes = {
+					3551311C203A7871006D4EA0 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					35513130203A7871006D4EA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3551311C203A7871006D4EA0;
+					};
+					3551313B203A7871006D4EA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3551311C203A7871006D4EA0;
+					};
+				};
+			};
+			buildConfigurationList = 35513118203A7870006D4EA0 /* Build configuration list for PBXProject "NoBrokerAssignement" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35513114203A7870006D4EA0;
+			productRefGroup = 3551311E203A7871006D4EA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3551311C203A7871006D4EA0 /* NoBrokerAssignement */,
+				35513130203A7871006D4EA0 /* NoBrokerAssignementTests */,
+				3551313B203A7871006D4EA0 /* NoBrokerAssignementUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3551311B203A7871006D4EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355131E0203A7953006D4EA0 /* Assets.xcassets in Resources */,
+				355131E2203A7953006D4EA0 /* Main.storyboard in Resources */,
+				355131E1203A7953006D4EA0 /* LaunchScreen.storyboard in Resources */,
+				355131F5203A7953006D4EA0 /* Image.bundle in Resources */,
+				3551321F203ACBBC006D4EA0 /* PropertyFilterStoryboard.storyboard in Resources */,
+				35513216203A7B41006D4EA0 /* PropertySearchStoryboard.storyboard in Resources */,
+				35513215203A7B41006D4EA0 /* PropertySearchCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3551312F203A7871006D4EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3551313A203A7871006D4EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		042499809C5558A3FB436948 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoBrokerAssignementUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A43272FC41BB3F325F44AF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignement/Pods-NoBrokerAssignement-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14A5A0D263E2EEBC483877AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoBrokerAssignementTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1710230D89486A398C5A0BE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignementTests/Pods-NoBrokerAssignementTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26087F12CF370DA9F7B32A35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignementTests/Pods-NoBrokerAssignementTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		526E8E0053D07C6C090B1B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignement/Pods-NoBrokerAssignement-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignement/Pods-NoBrokerAssignement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		830A11D08784ADC7B1AB06E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoBrokerAssignement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D27CB86454E757CDDFE8AF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignementUITests/Pods-NoBrokerAssignementUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D16B3A97926BF9688EEA25B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoBrokerAssignementUITests/Pods-NoBrokerAssignementUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35513119203A7871006D4EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355131DF203A7953006D4EA0 /* PropertySearchResultModel.swift in Sources */,
+				355131F2203A7953006D4EA0 /* KafkaRefreshControl.m in Sources */,
+				355131FD203A7953006D4EA0 /* KafkaRingIndicatorHeader.m in Sources */,
+				35513214203A7B41006D4EA0 /* PropertySearchCollectionViewCell.swift in Sources */,
+				355131F0203A7953006D4EA0 /* KafkaFootRefreshControl.m in Sources */,
+				355131FC203A7953006D4EA0 /* KafkaReplicatorHeader.m in Sources */,
+				35513217203A7B41006D4EA0 /* PropertySearchViewController.swift in Sources */,
+				35513212203A7B41006D4EA0 /* PropertySearchPresenter.swift in Sources */,
+				355131F7203A7953006D4EA0 /* KafkaNativeFooter.m in Sources */,
+				355131F8203A7953006D4EA0 /* KafkaReplicatorFooter.m in Sources */,
+				355131DB203A7953006D4EA0 /* AppDelegate.swift in Sources */,
+				355131D8203A7953006D4EA0 /* ViewProtocols.swift in Sources */,
+				355131ED203A7953006D4EA0 /* UIScrollView+KafkaLayout.m in Sources */,
+				355131DE203A7953006D4EA0 /* IndicatableViewExtension.swift in Sources */,
+				355131EF203A7953006D4EA0 /* UIScrollView+KafkaConfiguration.m in Sources */,
+				355131F9203A7953006D4EA0 /* KafkaRingIndicatorFooter.m in Sources */,
+				35513201203A7953006D4EA0 /* Utils.swift in Sources */,
+				355131DC203A7953006D4EA0 /* Enums.swift in Sources */,
+				355131F4203A7953006D4EA0 /* KafkaRefreshDefaults.m in Sources */,
+				35513200203A7953006D4EA0 /* Constants.swift in Sources */,
+				355131E9203A7953006D4EA0 /* ShadowView.swift in Sources */,
+				355131DA203A7953006D4EA0 /* PropertySearchAPIService.swift in Sources */,
+				355131EE203A7953006D4EA0 /* UIView+KafkaLayout.m in Sources */,
+				355131D7203A7953006D4EA0 /* RootRouter.swift in Sources */,
+				355131EB203A7953006D4EA0 /* CALayer+KafkaLayout.m in Sources */,
+				355131F6203A7953006D4EA0 /* KafkaArrowFooter.m in Sources */,
+				35513210203A7B41006D4EA0 /* PropertySearchContractor.swift in Sources */,
+				355131F3203A7953006D4EA0 /* UIScrollView+KafkaRefreshControl.m in Sources */,
+				355131FF203A7953006D4EA0 /* KafkaReplicatorLayer.m in Sources */,
+				35513223203AD137006D4EA0 /* PropertyFilterRouter.swift in Sources */,
+				355131DD203A7953006D4EA0 /* Extensions.swift in Sources */,
+				355131EC203A7953006D4EA0 /* NSObject+KafkaAnimation.m in Sources */,
+				355131FE203A7953006D4EA0 /* KafkaArcLayer.m in Sources */,
+				355131FA203A7953006D4EA0 /* KafkaArrowHeader.m in Sources */,
+				355131D6203A7953006D4EA0 /* RootContracter.swift in Sources */,
+				355131D9203A7953006D4EA0 /* Endpoints.swift in Sources */,
+				355131FB203A7953006D4EA0 /* KafkaNativeHeader.m in Sources */,
+				35513221203ACBCC006D4EA0 /* PropertyFilterViewController.swift in Sources */,
+				35513211203A7B41006D4EA0 /* PropertySearchInteractor.swift in Sources */,
+				355131F1203A7953006D4EA0 /* KafkaHeadRefreshControl.m in Sources */,
+				35513213203A7B41006D4EA0 /* PropertySearchRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3551312D203A7871006D4EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35513136203A7871006D4EA0 /* NoBrokerAssignementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35513138203A7871006D4EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35513141203A7871006D4EA0 /* NoBrokerAssignementUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35513133203A7871006D4EA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3551311C203A7871006D4EA0 /* NoBrokerAssignement */;
+			targetProxy = 35513132203A7871006D4EA0 /* PBXContainerItemProxy */;
+		};
+		3551313E203A7871006D4EA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3551311C203A7871006D4EA0 /* NoBrokerAssignement */;
+			targetProxy = 3551313D203A7871006D4EA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3551317E203A7953006D4EA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3551317F203A7953006D4EA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35513180203A7953006D4EA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35513181203A7953006D4EA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35513143203A7871006D4EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35513144203A7871006D4EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35513146203A7871006D4EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FE9E4121222EDA46D4D7FB /* Pods-NoBrokerAssignement.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M3FW9QML8;
+				INFOPLIST_FILE = NoBrokerAssignement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabcrew.grabcrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoBrokerAssignement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35513147203A7871006D4EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2922E6320836826732F77B47 /* Pods-NoBrokerAssignement.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M3FW9QML8;
+				INFOPLIST_FILE = NoBrokerAssignement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabcrew.grabcrew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoBrokerAssignement-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35513149203A7871006D4EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695FBAE2D62757E441304532 /* Pods-NoBrokerAssignementTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoBrokerAssignementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DurgeshPandey.NoBrokerAssignementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoBrokerAssignement.app/NoBrokerAssignement";
+			};
+			name = Debug;
+		};
+		3551314A203A7871006D4EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A51BBDD62607F74774C4701 /* Pods-NoBrokerAssignementTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoBrokerAssignementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DurgeshPandey.NoBrokerAssignementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoBrokerAssignement.app/NoBrokerAssignement";
+			};
+			name = Release;
+		};
+		3551314C203A7871006D4EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1610098ED118388AF05C8860 /* Pods-NoBrokerAssignementUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoBrokerAssignementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DurgeshPandey.NoBrokerAssignementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoBrokerAssignement;
+			};
+			name = Debug;
+		};
+		3551314D203A7871006D4EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC68C11A74A26AA98298A951 /* Pods-NoBrokerAssignementUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoBrokerAssignementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DurgeshPandey.NoBrokerAssignementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoBrokerAssignement;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35513118203A7870006D4EA0 /* Build configuration list for PBXProject "NoBrokerAssignement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35513143203A7871006D4EA0 /* Debug */,
+				35513144203A7871006D4EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35513145203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35513146203A7871006D4EA0 /* Debug */,
+				35513147203A7871006D4EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35513148203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35513149203A7871006D4EA0 /* Debug */,
+				3551314A203A7871006D4EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3551314B203A7871006D4EA0 /* Build configuration list for PBXNativeTarget "NoBrokerAssignementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3551314C203A7871006D4EA0 /* Debug */,
+				3551314D203A7871006D4EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35513115203A7870006D4EA0 /* Project object */;
+}
